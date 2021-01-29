@@ -20,7 +20,7 @@
 
 ## How to Install
 
-- Download the Angular application to the desktop
+- Download the Angular application to your computer
 - Open it via Visual Studio code
 - Type npm install to install required packages in the package.json file
 - Configure the Firebase instance
@@ -37,5 +37,6 @@
 - Run both the Projects. Angular project can be run with ng serve command, whereas the C# API can be run with dotnet watch run
 
 ## Developer
-Badde Liyanage Don Dilanga, 2021/January, github@dilanga.com
+Badde Liyanage Don Dilanga, 2021/January, github@dilanga.com.
+Sri Lanka LK. 
   
