@@ -33,8 +33,9 @@
 - Open it via Visual Studio Code
 - Register in Copyscape, add $5 credits to the account, and go to the Premium API Section
 - Copy the account's Username, and API Key, and add it to the [PlagiarismCheckingMeta](https://github.com/donqq/Content-Management-System-for-Blogs-API/blob/master/DataTransferObject/PlagiarismCheckingMeta.cs)
+- Replace firebase_project_id in both AuthRepository.cs, Startup.cs files with the "firebase project id" you have created early.
 - Run both the Projects. Angular project can be run with ng serve command, whereas the C# API can be run with dotnet watch run
 
 ## Developer
-Badde Liyanage Don Dilanga. 
+Badde Liyanage Don Dilanga, 2020/January, github@dilanga.com
   
