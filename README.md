@@ -37,5 +37,5 @@
 - Run both the Projects. Angular project can be run with ng serve command, whereas the C# API can be run with dotnet watch run
 
 ## Developer
-Badde Liyanage Don Dilanga, 2020/January, github@dilanga.com
+Badde Liyanage Don Dilanga, 2021/January, github@dilanga.com
   
