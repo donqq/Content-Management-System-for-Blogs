@@ -39,4 +39,20 @@
 ## Developer
 Badde Liyanage Don Dilanga, 2021/January, github@dilanga.com.
 Sri Lanka LK. 
+
+## License
+Simple non code license (SNCL)
+
+#### Can
+ - Distribute
+ - Modify
+#### Cannot
+ - Commercial Use
+ - Hold Liable
+ - Use Trademark
+#### Must
+ - Include Copyright
+ - Include Notice
+ - Include License
+ - Give Credit
   
