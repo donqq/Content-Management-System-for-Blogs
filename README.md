@@ -35,5 +35,6 @@
 - Copy the account's Username, and API Key, and add it to the [PlagiarismCheckingMeta](https://github.com/donqq/Content-Management-System-for-Blogs-API/blob/master/DataTransferObject/PlagiarismCheckingMeta.cs)
 - Run both the Projects. Angular project can be run with ng serve command, whereas the C# API can be run with dotnet watch run
 
-
+## Developer
+Badde Liyanage Don Dilanga. 
   
