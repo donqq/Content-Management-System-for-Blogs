@@ -1,0 +1,49 @@
+<!-- /* Copyright (C) 2021/January Badde Liyanage Don Dilanga ( github@dilanga.com ) - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the Simple non code license (SNCL)
+ * https://tldrlegal.com/license/simple-non-code-license-(sncl)
+ * You should have received a copy of the Simple non code license (SNCL) with
+ * this file. If not, please write to: github@dilanga.com , or visit : https://github.com/donqq/Content-Management-System-for-Blogs
+ */ -->
+
+<!-- user add menu -->
+<mat-card>
+  <mat-card-content>
+  <form class="authForm" #user='ngForm' (ngSubmit)='addUser(user)' >
+    <mat-form-field>
+      <mat-label>User Name</mat-label>
+      <input required matInput type="text" name="userName" placeholder="1234" ngModel>
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input required matInput type="email" name="email" placeholder="1234" ngModel>
+    </mat-form-field>
+    <br/>
+    <button mat-raised-button color="primary" type='submit' value='Add New User'> Add New User </button>
+    <button mat-raised-button color="primary" (click)='cancelFilling(user)'>Cancel</button>
+  </form>
+</mat-card-content>
+</mat-card>
+
+<!-- user management table -->
+<table mat-table [dataSource]="dataSourceObsv">
+
+  <ng-container matColumnDef="username">
+    <th mat-header-cell *matHeaderCellDef> User Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="role">
+    <th mat-header-cell *matHeaderCellDef> Role </th>
+    <td mat-cell *matCellDef="let element"> {{element.role}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

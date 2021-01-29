@@ -1,0 +1,36 @@
+<!-- /* Copyright (C) 2021/January Badde Liyanage Don Dilanga ( github@dilanga.com ) - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the Simple non code license (SNCL)
+ * https://tldrlegal.com/license/simple-non-code-license-(sncl)
+ * You should have received a copy of the Simple non code license (SNCL) with
+ * this file. If not, please write to: github@dilanga.com , or visit : https://github.com/donqq/Content-Management-System-for-Blogs
+ */ -->
+
+<div class='controlPanel'>
+  <button mat-raised-button color="primary" (click)='insertRecord()'>Insert Record</button>
+  <button mat-raised-button color="primary" (click)='deleteRecord()'>Delete Record</button>
+  <mat-form-field>
+    <mat-label>Search Depth</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let value of searchdepthValues" [value]="value" (click)='selectedDepth(value)'>
+        {{value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<ag-grid-angular
+    id='agGridAngular'
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [pagination]="true"
+    [columnDefs]="columnDefs"
+    [rowSelection]="rowSelection"
+    (gridReady)='onGridReady($event)'
+    editType = 'fullRow'
+    enableCellChangeFlash=true
+    [gridOptions]='gridOptions'
+    (rowSelected)='onRowSelected()'
+    (cellValueChanged)='onCellValueChanged($event)'
+    #agGrid>
+</ag-grid-angular>

@@ -1,0 +1,23 @@
+<!-- /* Copyright (C) 2021/January Badde Liyanage Don Dilanga ( github@dilanga.com ) - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the Simple non code license (SNCL)
+ * https://tldrlegal.com/license/simple-non-code-license-(sncl)
+ * You should have received a copy of the Simple non code license (SNCL) with
+ * this file. If not, please write to: github@dilanga.com , or visit : https://github.com/donqq/Content-Management-System-for-Blogs
+ */ -->
+
+<!-- article upload button -->
+<button mat-raised-button color="primary"
+[style.display]="showButton?'block':'none'" (click)='filePicker.click()'>Upload Article</button>
+<input type='file' #filePicker (change)='upload($event)' accept=".txt" [style.display]="'none'" (click)='filePicker.value=null'/>
+
+<!-- plagiarism score -->
+<span [innerHTML]='plagiarismScore' (click)='filePicker.click()'></span>
+
+<!-- article upload progress -->
+<mat-progress-bar
+        mode="indeterminate"
+        [value]="progress"
+        [style.display]="showProgressBar?'block':'none'">
+</mat-progress-bar>
+

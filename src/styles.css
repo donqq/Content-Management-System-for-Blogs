@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-balham.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.ag-theme-balham .ag-row-selected {
+  background: rgb(250,194,45);
+  background: linear-gradient(0deg, rgba(250,194,45,0.4973530916272759) 0%, rgba(253,223,50,0.5001542120754552) 99%);
+  font-weight:bold;
+}
+
+.ag-header-container {
+  font-size:14px;
+}

@@ -1,0 +1,10 @@
+button {
+  height: 40px;
+  width: auto;
+  line-height: 3px;
+  margin-bottom:5px;
+}
+
+mat-progress-bar {
+  height:35px;
+}
