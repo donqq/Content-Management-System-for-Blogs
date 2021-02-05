@@ -55,4 +55,6 @@ Simple non code license (SNCL)
  - Include Notice
  - Include License
  - Give Credit
-  
+
+# Screenshots
+<img src='src/assets/brave_SJrl7lypJA.png' width='25%'> <img src='src/assets/brave_UY1Z4V7ELz.png' width='25%'> <img src='src/assets/brave_bYYXuZScap.png' width='25%'> <img src='src/assets/brave_rSoqIFCMp9.png' width='25%'>
